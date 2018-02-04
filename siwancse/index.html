@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>系友餐敘暨會員大會</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <script src="js/jquery-1.9.1.js"></script>
+  <link rel="stylesheet" href="css/style.css">  
+  
+</head>
+
+<body>
+  <section class="section">
+	<h2>國立中山大學資訊工程學系系友會<br>系友餐敘暨會員大會</h2>
+
+	<div class="form-progress">
+		<progress class="form-progress-bar" min="0" max="100" value="0" step="33" aria-labelledby="form-progress-completion"></progress>
+		
+		<div class="form-progress-indicator one active"></div>
+		<div class="form-progress-indicator two"></div>
+		<div class="form-progress-indicator three"></div>
+		<div class="form-progress-indicator four"></div>
+		
+		<p id="form-progress-completion" class="js-form-progress-completion sr-only" aria-live="polite">0% complete</p>
+	</div>
+	
+	
+	<div class="animation-container">
+		<!-- Step one -->
+		<div class="form-step js-form-step waiting hidden" data-step="3">
+
+			<p class="form-instructions"><strong>歡迎成為系友會的一份子</strong><br>
+				此份資料僅供編製會員名冊用途，絕不公開並善盡保密責任，請您放心填復！</p>
+
+			<form action="" name="form-step-3" >
+				<div class="fieldgroup">
+					<input type="text" name="firstName" id="firstName" />
+					<label for="firstName">姓名</label>
+				</div>
+				<div class="fieldgroup">
+					<input type="text" name="firstName" id="firstName" />
+					<label for="firstName">性別</label>
+				</div>
+				<div class="fieldgroup"><label>出生年月日</label>
+					<br>
+					<input type="date" name="lastName" id="lastName" />
+					
+				</div>
+				<div class="fieldgroup">
+					<input type="text" name="lastName" id="lastName" />
+					<label for="lastName">出生地</label>
+				</div>
+
+				<div class="fieldgroup">
+					<input type="text" name="email" id="email" />
+					<label for="email">最高學歷</label>
+				</div>
+				<div class="fieldgroup">
+					<input type="text" name="email" id="email" />
+					<label for="email">連絡電話</label>
+				</div>
+				<div class="fieldgroup">
+					<input type="text" name="email" id="email" />
+					<label for="email">戶籍地址</label>
+				</div>
+
+				<div class="fieldgroup">
+					<input type="text" name="postalCode" id="postalCode" />
+					<label for="postalCode">現職</label>
+				</div>
+
+				<div class="buttons">
+						<button type="button" class="btn btn-alt js-reset">Previous</button>
+						&nbsp;&nbsp;	
+						<button type="submit" class="btn">Submit</button>
+				</div>
+			</form>
+
+		</div>
+		
+			<!-- Step two -->
+			<div class="form-step js-form-step" data-step="1" style="width: 100%;">
+
+				<p class="form-instructions">
+					<div class="form-center"> <strong>敬邀參加中山資工系友會餐敘 2017.11.25 (六) 12:00</strong>
+						<br><br> </div>
+					各位系友，大家好:<br>	<br>	
+							<div class="form-center">人生不相見，動如參與商。 
+							今夕復何夕，共此<span style="font-size:20px;color: rgb(0,112,192);font-weight: bold;">參和院</span>。 <br><br></div>
+							為了能讓各學制系友有更進一步認識，中山資工系友會陸續安排巡迴餐敘活動；第一場【臺南場系友餐敘】已於7月1日圓滿完成；接下來系友會即將邀請各位參與【臺北場系友餐敘】，謹訂11月25日（星期六）12:00舉行，我們也特別商請到大家很懷念的系辦莉萍姊出席，歡迎您攜家帶眷一同前往！<br><br>
+							此外，跟各位系友報告一件值得開心的消息～中山資工系友會已於年初申請成立「全國性社會團體」，經內政部准予籌組，目前為徵求會員階段（ 即日起開始徵求至11月8日截止），預計11月25日（星期六）13:30 召開會員大會（接續前述系友會餐敘）。<br><br>
+							若有您的行動支持，將有助中山資工系友會籌設社會團體。我們誠摯邀請您參與本次臺北場系友餐敘，並成為中山資工系友會社會團體一份子（當然，如果您還不清楚成為會員相關細節，也歡迎您出席11/25餐敘活動，不需要此時加入會員）
+							<br><br>
+							系友會理事長　楊凱珽<br>
+							理事、監事群<br>
+							聯名敬邀<br><br>
+							<a href="./Taipei.png"><img src="Taipei.png" style="width:110%;"></a>
+						</p>
+	
+				<form action="" name="form-step-1" id="form-step-1">
+						<div class="fieldgroup">
+							<label for="vol">是否參加</label><br><br>
+							<input type="radio" name="vol" id="A" style="width: 5%;" />是，有意願參加餐敘，而且有意願加入會員<br>
+							<input type="radio" name="vol" id="B" style="width: 5%;" />是，有意願參加餐敘，但無意願加入會員<br>
+							<input type="radio" name="vol" id="C" style="width: 5%;" />否，雖無法參加餐敘，但我有意願加入會員<br>
+						</div>
+						<div class="yesform" id="divA">
+							<input type="text" name="Name" id="Name" placeholder="姓名" />
+							<input type="text" name="Email" id="Email" placeholder="電子郵件" />
+							<input type="text" name="Phone" id="Phone" placeholder="連絡電話" />
+							<input type="text" name="Nump" id="Nump" placeholder="人數" />
+						</div>
+						<div class="yesform" id="divB">
+							<input type="text" name="Name" id="Name" placeholder="姓名" />
+							<input type="text" name="Email" id="Email" placeholder="電子郵件" />
+							<input type="text" name="Phone" id="Phone" placeholder="連絡電話" />
+							<input type="text" name="Nump" id="Nump" placeholder="人數" />
+						</div>
+						<div class="buttons">
+								<button type="submit" class="btn" id="btnorC">Continue</button>
+								<button type="button" class="js-end" id="btnorS">Submit</button>
+						</div>
+				</form>
+		</div>
+		<script type="text/javascript">
+			var radChecked = function() {
+				
+  				var vl = $("input[name=vol]:checked").val();
+  				if( vl == "B" )
+  				{
+  					$('#btnorC').hide();
+  					$('#btnorS').show();
+  			// 		var $currentForm = $(this).parents('.js-form-step');
+					// showEndForm($currentForm);
+  				}
+  				else{
+  					$('#btnorS').hide();
+  					$('#btnorC').show();		
+  				}
+  				$('.yesform').hide();
+  				$('#div'+vl ).show();
+  			};
+ 
+			$(document).ready(function(e) {
+			  radChecked();
+			  $("input[name=vol]").on( "click", radChecked );
+			});
+	</script>
+		
+		
+					<!-- Step three -->
+			<div class="form-step js-form-step waiting hidden" data-step="4">
+
+				<p class="form-final">
+					<strong>感謝您填復會員資料，有任何問題也歡迎與我們聯繫！<br>
+				聯絡人：&nbsp;<a href="mailto:ss910034@gmail.com">蕭廷瑞</a>先生 0975-752165<br>
+　　　　			<a href="mailto:lphuang@cse.nsysu.edu.tw">黃莉萍</a>小姐 0939-194128</strong>
+						</p>
+			</div>
+		
+		
+		
+		<!-- Step four -->
+			<div class="form-step js-form-step waiting hidden" data-step="2">
+
+				<p class="form-instructions"><strong>歡迎成為系友會的一份子</strong><br><br>
+						<a href="./form1.jpg"><img src="form1.jpg" width="100%"></a>
+				</p>
+
+				<form action="" name="form-step-2">
+						<!-- <div class="fieldgroup">
+								<input type="text" name="agreen" id="agreen" />
+								<label for="agreen">I agree</label>
+						</div> -->
+
+						<div class="buttons">
+								<button type="button" class="btn btn-alt js-reset">Previous</button>&nbsp;&nbsp;
+								<button type="submit" class="btn">Continue</button>
+						</div>
+				</form>
+
+		</div>
+	</div>
+</section>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
